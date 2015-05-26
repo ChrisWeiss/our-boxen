@@ -89,3 +89,52 @@ node default {
     target => $boxen::config::repodir
   }
 }
+
+# custom stuff
+include adium
+include alfred
+include appcleaner
+include authy
+include bartender
+include better_touch_tools
+include calibre
+include caffeine
+include chrome
+include crashplan
+include dash
+include dropbox
+include eclipse::java
+include evernote
+include flux
+include heroku
+include istatmenus4
+include iterm2::dev
+include iterm2::colors::solarized_dark
+include karabiner
+include karabiner::login_item
+karabiner::remap{ 'controlL2controlL_escape': }
+include macvim
+include mou
+include notational_velocity::nvalt
+include onepassword
+include onepassword::chrome
+include osx::keyboard::capslock_to_control
+include seil
+include seil::login_item
+include skitch
+include sonos
+include sourcetree
+include steam
+include tmux
+include vagrant
+include virtualbox
+include vlc
+include wget
+include zsh
+
+class { 'osx::dock::position':
+  position => 'left' 
+}
+class { 'osx::dock::icon_size':
+  size => 26
+}
